@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>歌譜搜尋</title>
+	<link rel = "stylesheet" href = "css/style.css" type = "text/css">
+	<style>
+		#result img {
+			width: 195px;
+			height: 195px;
+			float: left;
+		}
+		#contents p {
+			font-size: 15px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id = "background">
+		<div id = "page">
+			<div id = "header">
+				<div id = "logo">
+					<img src = "images/logo.png" alt = "LOGO" height = "120">
+				</div>
+				<div id = "navigation">
+					<ul id = "navi">
+						<li>
+							<a href = "home.html">首頁</a>
+						</li>
+						<li>
+							<a href = "guitarist.html">知名演奏家</a>
+						</li>
+						<li>
+							<a href = "song.html">各式名曲</a>
+						</li>
+						<li class = "selected">
+							<a href = "search.html">歌譜搜尋</a>
+						</li>
+						<li>
+							<a href = "learn.html">學習指點</a>
+						</li>
+					</ul>
+				</div>
+            </div>
+            
+            <div id = "contents">
+				<div class = "box">
+					<div>
+						<div class = "body">
+							<h1>歌譜搜尋系統</h1>
+							<p>
+								有鑑於吉他手在特定情況時，常常會被cue臨時要唱一些流行歌，基於這個理念做發想，這個系統便就此誕生了！
+								<br>此系統收錄了20首時下最流行歌曲的副歌和弦進行，讓吉他手們能夠快速找尋熱門流行歌來彈唱！
+							</p>
+							<hr>
+							<p>輸入欲搜尋的熱門歌曲：
+								<select name = "選擇曲目" id = "choose">
+									<option>擁抱</option>
+									<option>燈光</option>
+									<option>煙幕</option>
+									<option>大海</option>
+									<option>平凡之路</option>
+									<option>光年之外</option>
+									<option>接不接受</option>
+									<option>一路向北</option>
+									<option>最長的電影</option>
+									<option>紅色高跟鞋</option>
+									<option>越來越不懂</option>
+									<option>說好的幸福呢</option>
+									<option>帶我去找夜生活</option>
+									<option>練習一個人生活</option>
+									<option>留給你的我從未</option>
+									<option>Closer</option>
+									<option>crush on</option>
+									<option>Payphone</option>
+									<option>Galway girl</option>
+									<option>Something just like this</option>
+								</select>
+
+								<button id = "button"> 搜尋</button>
+							</p>
+							
+							<span id = "result"></span>
+
+							<script src='js/search.js'></script>
+						</div>
+					</div>
+				</div>
+            </div>
+		</div>
+
+		<div id = "footer">
+			<div>
+				<ul class = "navigation">
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="guitarist.html">Musician</a>
+					</li>
+					<li>
+						<a href="song.html">Songs</a>
+					</li>
+					<li  class = "active">
+						<a href="search.html">Search</a>
+					</li>
+					<li>
+						<a href="learn.html">Learn</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

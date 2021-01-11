@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>首頁</title>
+	<link rel = "stylesheet" href = "css/style.css" type = "text/css">
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css"></link>
+	<script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel( {
+                loop: true,
+                items: 1,
+                autoplay: true,
+                nav: false,
+            });
+        });
+	</script>
+	<style>
+		.owl-carousel img{
+			width: 850px;
+			height: 425px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id = "background">
+		<div id = "page">
+			<div id = "header">
+				<div id = "logo">
+					<img src = "images/logo.png" alt = "LOGO" height = "120">
+				</div>
+
+				<div id = "navigation">
+					<ul>
+						<li class = "selected">
+							<a href = "home.html">首頁</a>
+						</li>
+						<li>
+							<a href = "guitarist.html">知名演奏家</a>
+						</li>
+						<li>
+							<a href = "song.html">各式名曲</a>
+						</li>
+						<li>
+							<a href = "search.html">歌譜搜尋</a>
+						</li>
+						<li>
+							<a href = "learn.html">學習指點</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id = "contents">
+				<div id = "adbox">
+
+					<div class = "owl-carousel">
+						<div class = "item"><img src = "images/home1.jpg"></div>
+						<div class = "item"><img src = "images/home2.jpg"></div>
+						<div class = "item"><img src = "images/home3.jpg"></div>
+						<div class = "item"><img src = "images/home4.jpg"></div>
+						<div class = "item"><img src = "images/home5.jpg"></div>
+					</div>
+                    
+					<h1>一起加入FingerStyle的世界！</h1>
+					<p>
+                        此網站提供了大量的指彈內容！包括知名演奏家們，像是 Kotaro Oshio、Sungha Jung、Andy Mckee...等，以及大量知名指彈神曲的簡介！甚至還有學習指點，能夠幫身在各階段的指彈新手指點迷津！
+					</p>
+				</div>
+
+				<div id = "main">
+					<div class = "box">
+						<div>
+							<div>
+								<h3>Latest News</h3>
+								<ul>
+									<li>
+										<h4><a href="https://reurl.cc/e9v577">2020第六屆烏托邦吉他大賽</a></h4>
+										<span>時間：2020/12/5<br>地點： 後台Backstage Café</span>
+										<p>
+											烏托邦吉他大賽是2011年開始，由台灣指彈吉他手董運昌所創辦的指彈吉他(Fingerstyle)比賽，每次都會有各方高手參加，可以說是臺灣指彈吉他（Fingerstyle)界最高強度的吉他比賽。
+											<br><br>
+										</p>
+									</li>
+									<li>
+										<h4><a href="https://reurl.cc/zbgyEe">董運昌x張仲麟</a></h4>
+										<span>時間：2020/9/4<br>地點：公館河岸留言</span>
+										<p>
+											步調放慢後，周遭的事物鮮明起來，與朋友的問候多了、親近了，更珍惜身邊擁有的一切。
+											後疫情的第一場售票活動，很榮幸能與敬仰的演奏家董運昌老師一起演出，意義非凡，感謝老師在音樂路上一直帶著我們後輩前進。
+											<br>(取自：張仲麟臉書)
+										</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id = "sidebar">
+					<div class = "section">
+						<a href = "guitarist.html"><img src="images/musician-site.jpg" alt="Img" width = "380"></a>
+					</div>
+					<div class = "section">
+						<a href = "song.html"><img src="images/song-site.jpg" alt="Img" width = "380"></a>
+					</div>
+					<div class = "section">
+						<a href = "search.html"><img src="images/search-site.jpg" alt="Img" width = "380"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id = "footer">
+			<div>
+				<ul class = "navigation">
+					<li class = "active">
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="guitarist.html">Guitarists</a>
+					</li>
+					<li>
+						<a href="song.html">Songs</a>
+					</li>
+					<li>
+						<a href="search.html">Search</a>
+					</li>
+					<li>
+						<a href="learn.html">Learn</a>
+					</li>
+				</ul>
+			</div>
+			<p>
+				<p><a href = "Fingerstyle音樂分享-00757005+0076C027.pptx">說明文件</a></p>
+			</p>
+		</div>
+	</div>
+</body>
+</html>

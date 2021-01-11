@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<title>知名演奏家</title>
+    <link rel = "stylesheet" href = "css/style.css" type = "text/css">
+    <style>
+
+    </style>
+    <script type ="text/javascript">
+        var theYear;
+        var theStyle;
+
+        function start(){
+            var button = document.getElementById("button");
+            button.addEventListener("click", Foo, false);
+        }
+
+        function Foo(){
+            var form1 = document.getElementById("form1");
+            var form2 = document.getElementById("form2");
+
+            for (var i = 0; i < form1.year.length; i++){
+                if (form1.year[i].checked){
+                    theYear =  form1.year[i].value;
+                }
+            }
+
+            for (var i = 0; i < form2.style.length; i++){
+                if (form2.style[i].checked){
+                    theStyle =  form2.style[i].value;
+                }
+            }
+            display();
+        }
+
+        function display(){
+            var yearOut = "";
+            var sytleOut = "";
+
+            // style == 1
+            if(theYear == 1 && theStyle == 1){
+                yearOut = "<p>零基礎的同學我們推薦你可以先從<span style = 'color: navy; font-size: 20px; font-weight: bold;'>T1213121</span>開始練習哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/c3VcnvVZ1dA' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>Drifting Cloud</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/l6e-MRaMFao' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            else if(theYear == 2 && theStyle == 1){
+                yearOut = "<p>有點基礎的同學，我們推薦你可以開始練練<span style = 'color: navy; font-size: 20px; font-weight: bold;'>三指法</span>哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/3lP3mkH9Wi0' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>The Milky way</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/wI-XdM7rIo8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            else if(theYear == 3 && theStyle == 1){
+                yearOut = "<p>程度還不錯的同學，我們推薦你可以開始研究<span style = 'color: navy; font-size: 20px; font-weight: bold;'>觸弦</span>哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/SBVr-qvB25k' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>Rylynn</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/wG0Prs_EqLE' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            // style == 2
+            else if(theYear == 1 && theStyle == 2){
+                yearOut = "<p>零基礎的同學如果想學日系，我們推薦你可以先從<span style = 'color: navy; font-size: 20px; font-weight: bold;'>基本的拍板技巧</span>開始練習哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/6ruZksYnIws' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>You and Me</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/2PIonVMUNfY' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            else if(theYear == 2 && theStyle == 2){
+                yearOut = "<p>有點基礎的同學，我們推薦你可以開始練練<span style = 'color: navy; font-size: 20px; font-weight: bold;'>同時發出大鼓及吉他聲音</span>的技巧哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/bDtdWtm8ULw' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>Wings you are the HERO</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/pxyqfNjS_rw' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            if(theYear == 3 && theStyle == 2){
+                yearOut = "<p>程度還不錯的同學，我們推薦你可以開始研究<span style = 'color: navy; font-size: 20px; font-weight: bold;'>組合的技巧</span>哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/XoufpMxFZ-k' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>Like a Star</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/GclnSyUSWwI' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            // style == 3
+            else if(theYear == 1 && theStyle == 3){
+                yearOut = "<p>零基礎的同學如果想玩玩美式，我們推薦你學習<span style = 'color: navy; font-size: 20px; font-weight: bold;'>基本的敲擊技巧</span>哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/y2IE_AsaBbg' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>Elephant King</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/siioLU7820A' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            else if(theYear == 2 && theStyle == 3){
+                yearOut = "<p>有點基礎的同學，我們推薦你可以直接練<span style = 'color: navy; font-size: 20px; font-weight: bold;'>Drifting</span>來驗收你的基本技巧哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/BSpUfcRG9zM' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們當然推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>Drifting</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/Ddn4MGaS3N4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            else if(theYear == 3 && theStyle == 3){
+                yearOut = "<p>程度還不錯的同學，我們推薦你可以開始研究<span style = 'color: navy; font-size: 20px; font-weight: bold;'>Petteri Sariola的技巧</span>哦！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/en-3oL2c0uU' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+                sytleOut = "<p>演奏曲的部分，我們推薦你這首<span style = 'color: navy; font-size: 20px; font-weight: bold;'>San Francisco Drive</span>！</p><iframe width='560' height='315' src='https://www.youtube.com/embed/ZJ3G_nXxZhU' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+            }
+
+            document.getElementById("result").innerHTML = yearOut +"<hr>"+ sytleOut;
+        }
+
+        window.addEventListener("load", start, false);
+    </script>
+</head>
+<body>
+	<div id = "background">
+		<div id = "page">
+			<div id = "header">
+				<div id = "logo">
+					<img src = "images/logo.png" alt = "LOGO" height = "120">
+				</div>
+				<div id = "navigation">
+					<ul id = "navi">
+						<li>
+							<a href = "home.html">首頁</a>
+						</li>
+						<li>
+							<a href = "guitarist.html">知名演奏家</a>
+						</li>
+						<li>
+							<a href = "song.html">各式名曲</a>
+						</li>
+						<li>
+							<a href = "search.html">歌譜搜尋</a>
+						</li>
+						<li class = "selected">
+							<a href = "learn.html">學習指點</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+							<h1>學習指點</h1>
+							<p>
+                                相信大家在剛接觸指彈時都會稍微沒有方向，我們都是過來人，大家都是這樣熬過來的！
+                                <br>
+                                為了減少這個情況的發生，於是我們於是規劃一套的簡易訓練菜單讓大家參考！
+                            </p>
+
+                            <form id="form1">
+                                <div>
+                                    <strong>您的琴齡：</strong><br>
+                                    <input type = "radio" name = "year" id = "r1" value = 1 checked><label for = "r1">零基礎</label>
+                                    <input type = "radio" name = "year" id = "r2" value = 2><label for = "r2">一至六個月演奏基礎</label>
+                                    <input type = "radio" name = "year" id = "r3" value = 3><label for = "r3">一年以上演奏程度</label>
+                                </div>
+                            </form>
+
+                            <form id="form2">
+                                <div>
+                                    <strong>您喜歡的演奏風格：</strong><br>
+                                    <input type = "radio" name = "style" id = "r4" value = 1 checked><label for = "r4">優美、旋律</label>
+                                    <input type = "radio" name = "style" id = "r5" value = 2><label for = "r5">日系、節奏</label>
+                                    <input type = "radio" name = "style" id = "r6" value = 3><label for = "r6">美式、敲擊</label>
+                                </div>
+                            </form>
+
+                            <input type = "button" value = "送出" id = "button">
+                            <hr>
+                            <div id = "result"></div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="footer">
+			<div>
+				<ul class = "navigation">
+					<li>
+						<a href="home.html">Home</a>
+					</li>
+					<li>
+						<a href="guitarist.html">Guitarists</a>
+					</li>
+					<li>
+						<a href="song.html">Songs</a>
+					</li>
+					<li>
+						<a href="search.html">Search</a>
+					</li>
+					<li class="active">
+						<a href="learn.html">Learn</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
